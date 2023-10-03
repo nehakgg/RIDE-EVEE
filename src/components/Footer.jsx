@@ -1,0 +1,83 @@
+// import logo from "../assets/logo.png";
+// import { AiOutlineArrowRight } from "react-icons/ai";
+// const Footer = () => {
+//   return (
+//     <div className="w-full">
+//       <div className="bg-[#2F313C] space-y-8 py-10">
+//         <img className="mx-auto" src={logo} alt="" />
+//         <div className="flex justify-center text-white gap-7">
+//           <a href="/">Home</a>
+//           <a href="/about">About</a>
+//           <h2>Services</h2>
+//           <h2>News</h2>
+//           <a href="/contact">Contact</a>
+//         </div>
+//         <div className="flex justify-center items-center text-white gap-7">
+//           <h2 className="text-white text-xl">Newsletter</h2>
+//           <div className="flex items-center relative">
+//             <input
+//               className="bg-white rounded-3xl text-black px-10 h-10"
+//               type="email"
+//               name=""
+//               id=""
+//               placeholder="Email"
+//             />
+//             <button
+//               className="bg-[#2F313C] text-white absolute right-0 rounded-e-3xl px-6 py-2 border-white border-2 hover:bg-[#4a9c2a] transition-colors h-10"
+//               type="submit">
+//               <AiOutlineArrowRight className="text-2xl" />
+//             </button>
+//           </div>
+//         </div>
+//         <div className="text-center text-white">
+//           <p>All Copyrights are reserved by RIDE EVEE</p>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Footer;
+
+
+import React from "react";
+import logo from "../assets/logo.png";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import './Footer.css'; // Import your CSS file for styling
+
+const Footer = () => {
+  return (
+    <div className="footer-container">
+      <div className="footer-content">
+        <img className="logo" src={logo} alt="Logo" />
+        <div className="nav-links">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <h2>Services</h2>
+          <h2>News</h2>
+          <a href="/contact">Contact</a>
+        </div>
+        <div className="newsletter">
+          <h2>Newsletter</h2>
+          <div className="input-container">
+            <input
+              className="email-input"
+              type="email"
+              name=""
+              id=""
+              placeholder="Email"
+            />
+            <button className="submit-button" type="submit">
+              <AiOutlineArrowRight className="arrow-icon" />
+            </button>
+          </div>
+        </div>
+        <div className="copyright-text">
+          <p>All Copyrights are reserved by RIDE EVEE</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
